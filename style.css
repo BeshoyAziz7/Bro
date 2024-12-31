@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.title {
+    font-size: 4em;
+    color: #ff4444;
+    text-shadow: 0 0 10px rgba(255, 68, 68, 0.7);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.subtitle {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2em;
+    color: #4CAF50;
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.yes-btn {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.yes-btn:hover {
+    transform: scale(1.1);
+}
+
+.no-btn {
+    background-color: #ff4444;
+    color: white;
+}
+
+/* Snowflakes */
+.snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #000;
+    position: fixed;
+    top: -10%;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+.snowflake:nth-child(1) { left: 10%; animation-duration: 10s; animation-delay: -1s; }
+.snowflake:nth-child(2) { left: 20%; animation-duration: 12s; animation-delay: -2s; }
+.snowflake:nth-child(3) { left: 30%; animation-duration: 8s; animation-delay: -3s; }
+.snowflake:nth-child(4) { left: 40%; animation-duration: 15s; animation-delay: -4s; }
+.snowflake:nth-child(5) { left: 50%; animation-duration: 11s; animation-delay: -5s; }
+.snowflake:nth-child(6) { left: 60%; animation-duration: 9s; animation-delay: -6s; }
+.snowflake:nth-child(7) { left: 70%; animation-duration: 13s; animation-delay: -7s; }
+.snowflake:nth-child(8) { left: 80%; animation-duration: 14s; animation-delay: -8s; }
+.snowflake:nth-child(9) { left: 90%; animation-duration: 10s; animation-delay: -9s; }
+.snowflake:nth-child(10) { left: 95%; animation-duration: 12s; animation-delay: -10s; }
+
+/* Gift Page Styles */
+.gift-page {
+    animation: fadeIn 2s ease-in;
+}
+
+.gift-title {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 3em;
+    color: #ff69b4;
+    margin-bottom: 20px;
+    text-shadow: rgba(226, 21, 192, 0.4) -1px -16px 0px;
+
+}
+
+.love-message {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.5em;
+    color: #ff4444;
+    margin: 20px 0;
+}
+
+.love-message2 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.5em;
+    color: #ff69b4;
+    margin: 20px 0;
+}
+
+
+.hearts {
+    margin-top: 30px;
+}
+
+.heart {
+    display: inline-block;
+    font-size: 3em;
+    animation: bounce 1s ease infinite;
+    margin: 0 10px;
+}
+
+.heart:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.heart:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ff4444, 0 0 20px #ff4444, 0 0 30px #ff4444;
+    }
+    to {
+        text-shadow: 0 0 20px #ff4444, 0 0 30px #ff4444, 0 0 40px #ff4444;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
